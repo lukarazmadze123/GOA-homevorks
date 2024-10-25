@@ -1,0 +1,22 @@
+body{
+    background-color: aqua;
+    text-align: center;
+}
+
+h1{
+    color: rgb(209, 104, 6);
+}
+
+.InfoLinst{
+    font-size: large;
+}
+
+.LinksList{
+    font-size: large;
+}
+
+.profile{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
