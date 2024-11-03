@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.rounded-div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+}
+.div1 {
+    background-color: #FF6F61;
+    border: 3px solid #E57373;
+}
+.div2 {
+    background-color: #6B5B95;
+    border: 3px solid #A78BFA;
+}
+.div3 {
+    background-color: #88B04B;
+    border: 3px solid #A5D6A7;
+}

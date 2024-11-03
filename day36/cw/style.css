@@ -1,0 +1,11 @@
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: #87CEEB; 
+    border-radius: 10px 10px 0 0;
+    border-top: 4px solid #FF6347;   
+    border-right: 4px solid #FFD700;   
+    border-bottom: 4px solid #32CD32;  
+    border-left: 4px solid #1E90FF;    
+    margin: 20px auto;
+  }
