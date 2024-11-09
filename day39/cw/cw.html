@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .zoom-image {
+            width: 200px;
+            height: 200px;
+            transition: transform 0.3s ease; /* გარდაქმნის ეფექტი */
+        }
+
+        /* ფოტოს გაზრდა hover-ზე */
+        .zoom-image:hover {
+            transform: scale(1.5); 
+        }
+       
+       .ul-container li{
+            color: seagreen;
+            
+        }
+        .ul-container a:hover{
+            color: tomato;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="ul-container">
+        <li><a href="#">gamarjoba</a></li>
+        <li><a href="#">rogor xar</a></li>
+        <li><a href="#">kargad shen</a></li>
+        <li><a href="#">mec kargad</a></li>
+        <li><a href="#">gaixare</a></li>
+    </ul>
+    <img hover src="./download.jfif" alt="" class="zoom-image">
+</body>
+</html>
