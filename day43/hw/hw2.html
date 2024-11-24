@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Custom Page</title>
+  <style>
+    body {
+      background-image: linear-gradient(to bottom, #1e3c72, #2a5298);
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    input, select {
+      margin: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #ff512f;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #dd2476;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Custom Page</h1>
+  <form>
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    <br>
+    <label for="age">Your Age:</label>
+    <input type="number" id="age" placeholder="Enter your age">
+    <br>
+    <label for="gender">Gender:</label>
+    <select id="gender">
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
