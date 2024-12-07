@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    background: linear-gradient(135deg, #6a11cb, hsl(81, 70%, 42%));
+}
+.diven{
+    color: rgb(6, 85, 255);
+    text-align: center;
+}
+.diven1{
+    color: aqua;
+    
+}
+.diven3{
+    color: aqua;
+    text-align: right;
+}
+button{
+    width: 200px;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00ff7f, #ffffff);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(146, 24, 24, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+input{
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #b9f2ff, #8a2be2);
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
