@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>წიგნების სამყარო</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #6c5ce7;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+#welcome {
+    margin-bottom: 2rem;
+}
+
+#books {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.book {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.book img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>წიგნების სამყარო</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">მთავარი</a></li>
+                    <li><a href="#books">წიგნები</a></li>
+                    <li><a href="#forum">ფორუმი</a></li>
+                    <li><a href="#contact">კონტაქტი</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <h2>მოგესალმებით "წიგნების სამყაროში"</h2>
+            <p>შემოგვიერთდით და აღმოაჩინეთ ახალი წიგნები, განიხილეთ ფავორიტი ავტორები და შექმენით თქვენი წიგნების სია.</p>
+        </section>
+
+        <section id="books">
+            <h2>პოპულარული წიგნები</h2>
+            <div class="book">
+                <img src="https://www.lit.ge//shop/uploads/shop_product_image_634.jpg" alt="დიდი გეტსბი">
+                <h3>დიდი გეტსბი</h3>
+                <p>ავტორი: ფიცჯერალდი</p>
+            </div>
+            <div class="book">
+                <img src="https://apiv1.biblusi.ge/storage/book/oVvQ20I5Jq7KqtXIEDUVxwZeLqs0J7LkLbBTx9C0.jpg" alt="მარტოობის 100 წელი">
+                <h3>მარტოობის 100 წელი</h3>
+                <p>ავტორი: მარკეს</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 "წიგნების სამყარო". ყველა უფლება დაცულია.</p>
+    </footer>
+</body>
+</html>
