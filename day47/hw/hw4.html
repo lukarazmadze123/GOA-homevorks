@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Container</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between; /* განალაგებს ელემენტებს შორის სივრცით */
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .box {
+            flex: 1; /* ელემენტები იზრდებიან და იკვეცებიან */
+            max-width: 150px; /* მაქსიმალური სიგანე */
+            text-align: center;
+            border: 5px solid gray;
+            font-size: 2rem;
+            padding: 40px 0;
+            margin: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Container</h1>
+    <p>Notice how the flex items shrink and expand as the browser is resized, but do not fill the entire container beyond a point.</p>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+</body>
+</html>
