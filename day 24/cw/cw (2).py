@@ -1,1 +1,1 @@
-#not cw
+print("cw არ იყო")

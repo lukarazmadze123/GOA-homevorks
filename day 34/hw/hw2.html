@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სურათების განლაგება</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 80%;
+        }
+
+        .start, .center, .end {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px dashed #007aff;
+            padding: 20px;
+            flex: 1;
+            height: 200px;
+        }
+
+        .start { justify-content: flex-start; }
+        .center { justify-content: center; }
+        .end { justify-content: flex-end; }
+
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>სურათების განლაგება</h1>
+    </header>
+    <div class="container">
+        <!-- სურათები დასაწყისში -->
+        <div class="start">
+            <img src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-1/468432210_597145616326539_8234260346622494910_n.jpg?stp=c360.0.1365.1365a_cp0_dst-jpg_s40x40_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=j8uqIHlHz4oQ7kNvgHBGk80&_nc_zt=24&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=AAog7D2VBpgTr_Zledf5t86&oh=00_AYDPjLZy7rwtnuPemJ0wyQ9oDojECHPKl_tFV4toy_YsnA&oe=676D9C49" alt="სურათი 1">
+            <img src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-1/468432210_597145616326539_8234260346622494910_n.jpg?stp=c360.0.1365.1365a_cp0_dst-jpg_s40x40_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=j8uqIHlHz4oQ7kNvgHBGk80&_nc_zt=24&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=AAog7D2VBpgTr_Zledf5t86&oh=00_AYDPjLZy7rwtnuPemJ0wyQ9oDojECHPKl_tFV4toy_YsnA&oe=676D9C49" alt="სურათი 2">
+        </div>
+        
+        <!-- სურათები შუაში -->
+        <div class="center">
+            <img src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-1/468432210_597145616326539_8234260346622494910_n.jpg?stp=c360.0.1365.1365a_cp0_dst-jpg_s40x40_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=j8uqIHlHz4oQ7kNvgHBGk80&_nc_zt=24&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=AAog7D2VBpgTr_Zledf5t86&oh=00_AYDPjLZy7rwtnuPemJ0wyQ9oDojECHPKl_tFV4toy_YsnA&oe=676D9C49" alt="სურათი 3">
+            <img src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-1/468432210_597145616326539_8234260346622494910_n.jpg?stp=c360.0.1365.1365a_cp0_dst-jpg_s40x40_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=j8uqIHlHz4oQ7kNvgHBGk80&_nc_zt=24&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=AAog7D2VBpgTr_Zledf5t86&oh=00_AYDPjLZy7rwtnuPemJ0wyQ9oDojECHPKl_tFV4toy_YsnA&oe=676D9C49" alt="სურათი 4">
+        </div>
+        
+        <!-- სურათები ბოლოში -->
+        <div class="end">
+            <img src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-1/468432210_597145616326539_8234260346622494910_n.jpg?stp=c360.0.1365.1365a_cp0_dst-jpg_s40x40_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=j8uqIHlHz4oQ7kNvgHBGk80&_nc_zt=24&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=AAog7D2VBpgTr_Zledf5t86&oh=00_AYDPjLZy7rwtnuPemJ0wyQ9oDojECHPKl_tFV4toy_YsnA&oe=676D9C49" alt="სურათი 5">
+            <img src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-1/468432210_597145616326539_8234260346622494910_n.jpg?stp=c360.0.1365.1365a_cp0_dst-jpg_s40x40_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=j8uqIHlHz4oQ7kNvgHBGk80&_nc_zt=24&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=AAog7D2VBpgTr_Zledf5t86&oh=00_AYDPjLZy7rwtnuPemJ0wyQ9oDojECHPKl_tFV4toy_YsnA&oe=676D9C49" alt="სურათი 6">
+        </div>
+    </div>
+</body>
+</html>

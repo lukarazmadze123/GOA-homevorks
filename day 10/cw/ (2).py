@@ -1,1 +1,1 @@
-#დავალება არ გვქონდა
+print("ar iyo davaleba")

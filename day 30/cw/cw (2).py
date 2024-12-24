@@ -1,1 +1,1 @@
-#not classvork
+print("ar iyo cw")
