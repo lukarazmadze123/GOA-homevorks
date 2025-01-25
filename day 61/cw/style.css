@@ -1,0 +1,110 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: aqua;
+}
+.hehey{
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: aqua;   
+}
+.circle{
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+
+    width: 200px;
+    height: 200px;
+    background-color: white;
+
+}
+.circle-1{
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.circle-2{
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+
+    width: 500px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: brown;
+
+
+}
+.circle-3{
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+
+    width: 500px;
+    height: 200px;
+    background-color: black;
+
+}
+.circle-4{
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+
+    width: 200px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.circle:active{
+    transform: translate(0px,0px)rotate(180deg);
+    background-color: black;
+}
+.circle-1:active{
+    transform: translate(0px,0px)rotate(180deg);
+    background-color: black;
+}
+.circle-2:active{
+    transform: translate(0px,0px)rotate(180deg);
+    background-color: black;
+}
+.circle-3:active{
+    transform: translate(0px,0px)rotate(180deg);
+    background-color: white;
+}
+.circle-4:active{
+    transform: translate(0px,0px)rotate(180deg);
+    background-color: black;
+}
