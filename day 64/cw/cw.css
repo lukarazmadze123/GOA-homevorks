@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.container{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(68, 197, 68);
+    border-radius: 50%;
+    animation-name: container ;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-delay: 0;
+    animation-iteration-count: infinite ;
+    animation-direction: alternate;
+}
+@keyframes container{
+    0%{
+        transform: translateX(0px);
+    }
+    20%{
+        transform: translate(500px, 500px);
+        background-color: green;
+
+    }
+    50%{
+        transform: translate(800px, 0);
+        background-color: seagreen;
+    }
+    60%{
+        transform: translate(500px,500px);
+
+    }
+    80%{
+        transform: translate(800px,0);
+        
+        
+    }
+    90%{
+        transform: translate(500px, 500px);
+
+    }
+    100%{
+        transform: translate(800px,0);
+
+    }
+}
