@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contaner{
+    display: flex;
+    flex-direction: row ;
+    background-color: blue;
+    padding: 10px;
+    height: 300px;
+    justify-content: space-between;
+}
+.box{
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+    border: 1px soid black;
+}
