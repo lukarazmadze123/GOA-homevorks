@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვებსაიტი</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        /* პროფილის ბარათი */
+        .profile-card {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        /* ვერტიკალური სია */
+        .vertical-list {
+            list-style: none;
+            padding: 0;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        .vertical-list li {
+            padding: 10px;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+        }
+        /* ვერტიკალური მენიუ */
+        .menu {
+            width: 200px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        .menu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu a:hover {
+            background: #ddd;
+        }
+        /* პოსტის ქარდი */
+        .post-card {
+            width: 300px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .post-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .post-content {
+            padding: 15px;
+        }
+        .read-more {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px auto;
+            width: 80px;
+        }
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- ვერტიკალური მენიუ -->
+        <nav class="menu">
+            <a href="#">მთავარი</a>
+            <a href="#">ჩვენს შესახებ</a>
+            <a href="#">სერვისები</a>
+            <a href="#">კონტაქტი</a>
+        </nav>
+
+        <!-- პროფილის ბარათი -->
+        <div class="profile-card">
+            <img src="profile.jpg" alt="პროფილის სურათი">
+            <h2>თქვენი სახელი</h2>
+            <p>ეს არის მოკლე ინფორმაცია ჩემს შესახებ...</p>
+        </div>
+
+        <!-- ვერტიკალური სია -->
+        <ul class="vertical-list">
+            <li>პირველი ელემენტი</li>
+            <li>მეორე ელემენტი</li>
+            <li>მესამე ელემენტი</li>
+        </ul>
+
+        <!-- პოსტის ბარათი -->
+        <div class="post-card">
+            <img src="post.jpg" alt="პოსტის სურათი">
+            <div class="post-content">
+                <h3>პოსტის სათაური</h3>
+                <p>ეს არის პოსტის მოკლე აღწერა...</p>
+                <a href="#" class="read-more">ვრცლად</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 ყველა უფლება დაცულია</p>
+    </footer>
+</body>
+</html>

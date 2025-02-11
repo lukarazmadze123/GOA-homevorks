@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვერტიკალური სია</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .vertical-list {
+            list-style: none;
+            padding: 0;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .vertical-list li {
+            padding: 10px;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+        }
+        .vertical-list li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <ul class="vertical-list">
+        <li>პირველი ელემენტი</li>
+        <li>მეორე ელემენტი</li>
+        <li>მესამე ელემენტი</li>
+    </ul>
+</body>
+</html>
