@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Shapes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            gap: 10px;
+        }
+        .shape {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position: relative;
+        }
+        .small {
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <!-- 17 Shapes -->
+        <div class="shape"></div>
+        <div class="shape"><div class="small" style="top: 10px; left: 10px;"></div></div>
+        <div class="shape"><div class="small" style="top: 10px; left: 10px;"></div><div class="small" style="top: 10px; left: 40px;"></div></div>
+        <div class="shape"><div class="small" style="top: 10px; left: 10px;"></div><div class="small" style="top: 40px; left: 10px;"></div></div>
+        <div class="shape"><div class="small" style="top: 10px; left: 10px;"></div><div class="small" style="top: 40px; left: 10px;"></div><div class="small" style="top: 70px; left: 10px;"></div></div>
+        <div class="shape"><div class="small" style="top: 10px; left: 10px;"></div><div class="small" style="top: 10px; left: 40px;"></div><div class="small" style="top: 40px; left: 10px;"></div></div>
+        <div class="shape"><div class="small" style="top: 10px; left: 10px;"></div><div class="small" style="top: 10px; left: 40px;"></div><div class="small" style="top: 40px; left: 10px;"></div><div class="small" style="top: 40px; left: 40px;"></div></div>
+        <div class="shape"><div class="small" style="top: 50px; left: 50px;"></div></div>
+        <div class="shape"><div class="small" style="top: 20px; left: 20px;"></div><div class="small" style="top: 50px; left: 50px;"></div></div>
+        <div class="shape"><div class="small" style="top: 10px; left: 10px;"></div><div class="small" style="top: 10px; left: 50px;"></div><div class="small" style="top: 50px; left: 10px;"></div><div class="small" style="top: 50px; left: 50px;"></div></div>
+        <div class="shape"><div class="small" style="top: 30px; left: 30px;"></div></div>
+        <div class="shape"><div class="small" style="top: 10px; left: 10px;"></div><div class="small" style="top: 10px; left: 40px;"></div><div class="small" style="top: 10px; left: 70px;"></div></div>
+        <div class="shape"><div class="small" style="top: 10px; left: 10px;"></div><div class="small" style="top: 10px; left: 40px;"></div><div class="small" style="top: 40px; left: 10px;"></div><div class="small" style="top: 40px; left: 40px;"></div><div class="small" style="top: 10px; left: 70px;"></div></div>
+        <div class="shape"><div class="small" style="top: 10px; left: 10px;"></div><div class="small" style="top: 10px; left: 40px;"></div><div class="small" style="top: 10px; left: 70px;"></div><div class="small" style="top: 40px; left: 10px;"></div></div>
+        <div class="shape"><div class="small" style="top: 10px; left: 10px;"></div><div class="small" style="top: 10px; left: 40px;"></div><div class="small" style="top: 10px; left: 70px;"></div><div class="small" style="top: 40px; left: 10px;"></div><div class="small" style="top: 40px; left: 40px;"></div><div class="small" style="top: 40px; left: 70px;"></div></div>
+        <div class="shape">
+            <div class="small" style="top: 10px; left: 10px;"></div>
+            <div class="small" style="top: 10px; left: 40px;"></div>
+            <div class="small" style="top: 10px; left: 70px;"></div>
+            <div class="small" style="top: 40px; left: 10px;"></div>
+            <div class="small" style="top: 40px; left: 40px;"></div><div class="small" style="top: 40px; left: 70px;"></div><div class="small" style="top: 70px; left: 10px;"></div></div> <div class="shape"><div class="small" style="top: 10px; left: 10px;"></div><div class="small" style="top: 10px; left: 40px;"></div><div class="small" style="top: 10px; left: 70px;"></div><div class="small" style="top: 40px; left: 10px;"></div><div class="small" style="top: 40px; left: 40px;"></div><div class="small" style="top: 40px; left: 70px;"></div><div class="small" style="top: 70px; left: 10px;"></div></div>
+    </div>
+</body>
+</html>
