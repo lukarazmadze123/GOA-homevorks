@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .container {
+            width: 200px;
+            height: 120px;
+            border: 2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5px;
+            background: #f8f8f8;
+        }
+        .box {
+            width: 40px;
+            height: 40px;
+            background: red;
+            margin: 2px;
+        }
+        
+        /* Flex Direction */
+        .row { flex-direction: row; }
+        .column { flex-direction: column; }
+        .row-reverse { flex-direction: row-reverse; }
+        .column-reverse { flex-direction: column-reverse; }
+        
+        /* Align Items */
+        .align-start { align-items: flex-start; }
+        .align-center { align-items: center; }
+        .align-end { align-items: flex-end; }
+        .align-stretch { align-items: stretch; }
+        
+        /* Justify Content */
+        .justify-start { justify-content: flex-start; }
+        .justify-center { justify-content: center; }
+        .justify-end { justify-content: flex-end; }
+        .justify-between { justify-content: space-between; }
+        .justify-around { justify-content: space-around; }
+        .justify-evenly { justify-content: space-evenly; }
+        
+        /* Align Content */
+        .align-content-start { align-content: flex-start; }
+        .align-content-center { align-content: center; }
+        .align-content-end { align-content: flex-end; }
+        .align-content-between { align-content: space-between; }
+        .align-content-around { align-content: space-around; }
+        .align-content-stretch { align-content: stretch; }
+    </style>
+</head>
+<body>
+    <div class="container row">
+        <div class="box"></div><div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container column">
+        <div class="box"></div><div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container row-reverse">
+        <div class="box"></div><div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container column-reverse">
+        <div class="box"></div><div class="box"></div><div class="box"></div>
+    </div>
+    
+    <div class="container align-start">
+        <div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container align-center">
+        <div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container align-end">
+        <div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container align-stretch">
+        <div class="box"></div><div class="box"></div>
+    </div>
+    
+    <div class="container justify-start">
+        <div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container justify-center">
+        <div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container justify-end">
+        <div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container justify-between">
+        <div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container justify-around">
+        <div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container justify-evenly">
+        <div class="box"></div><div class="box"></div>
+    </div>
+    
+    <div class="container align-content-start">
+        <div class="box"></div><div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container align-content-center">
+        <div class="box"></div><div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container align-content-end">
+        <div class="box"></div><div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container align-content-between">
+        <div class="box"></div><div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container align-content-around">
+        <div class="box"></div><div class="box"></div><div class="box"></div>
+    </div>
+    <div class="container align-content-stretch">
+        <div class="box"></div><div class="box"></div><div class="box"></div>
+    </div>
+</body>
+</html>
