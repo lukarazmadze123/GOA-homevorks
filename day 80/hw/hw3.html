@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ჟირაფები</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "image"
+        "facts"
+        "footer";
+      grid-template-rows: 80px 250px auto 60px;
+      gap: 15px;
+      padding: 20px;
+    }
+    header {
+      grid-area: header;
+      background: #ffe4b5;
+      text-align: center;
+      font-size: 2rem;
+      padding-top: 20px;
+    }
+    .image {
+      grid-area: image;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/9/9f/Giraffe_standing.jpg') no-repeat center/cover;
+      border-radius: 10px;
+    }
+    .facts {
+      grid-area: facts;
+    }
+    .facts ul {
+      padding-left: 20px;
+    }
+    footer {
+      grid-area: footer;
+      background: #f5deb3;
+      text-align: center;
+      line-height: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>ჟირაფები — ბუნების გიგანტები</header>
+    <div class="image"></div>
+    <div class="facts">
+      <h2>საინტერესო ფაქტები</h2>
+      <ul>
+        <li>ჟირაფებს ყველაზე გრძელი კისერი აქვთ დედამიწაზე.</li>
+        <li>მათ კისერზე 7 მალაა — როგორც ადამიანებს.</li>
+        <li>მათი ენა შეიძლება იყოს 45 სმ-მდე გრძელი!</li>
+      </ul>
+    </div>
+    <footer>© 2025 ჟირაფების ენციკლოპედია</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>ზღვის გოჭები</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "hero"
+        "description"
+        "gallery"
+        "footer";
+      grid-template-rows: 80px 300px auto auto 60px;
+      gap: 20px;
+      padding: 20px;
+    }
+    header {
+      grid-area: header;
+      background: #ffa07a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+    .hero {
+      grid-area: hero;
+      background: url('https://placekitten.com/800/300') no-repeat center/cover;
+    }
+    .description {
+      grid-area: description;
+    }
+    .gallery {
+      grid-area: gallery;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      grid-area: footer;
+      background: #f4a460;
+      text-align: center;
+      line-height: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>ზღვის გოჭები</header>
+    <div class="hero"></div>
+    <div class="description">
+      <h2>ზღვის გოჭების შესახებ</h2>
+      <p>ისინი საყვარელი, ფუმფულა ცხოველები არიან...</p>
+    </div>
+    <div class="gallery">
+      <img src="https://placekitten.com/200/200" alt="ზღვის გოჭი 1">
+      <img src="https://placekitten.com/201/200" alt="ზღვის გოჭი 2">
+      <img src="https://placekitten.com/202/200" alt="ზღვის გოჭი 3">
+    </div>
+    <footer>© 2025 ზღვის გოჭები</footer>
+  </div>
+</body>
+</html>

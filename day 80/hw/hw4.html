@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>გოა</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .wrapper {
+      display: grid;
+      grid-template-areas:
+        "nav nav"
+        "main aside"
+        "footer footer";
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 60px auto 50px;
+      gap: 15px;
+      padding: 15px;
+    }
+    nav {
+      grid-area: nav;
+      background-color: #20b2aa;
+      color: white;
+      text-align: center;
+      line-height: 60px;
+      font-weight: bold;
+    }
+    main {
+      grid-area: main;
+    }
+    aside {
+      grid-area: aside;
+      background: #e0ffff;
+      padding: 10px;
+    }
+    footer {
+      grid-area: footer;
+      background: #afeeee;
+      text-align: center;
+      line-height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>გოას მოგზაურობა</nav>
+    <main>
+      <h1>გოა — ინდოეთის სანაპირო სამოთხე</h1>
+      <p>გოა ცნობილია თავისი ოქროს ქვიშით, უნიკალური კულტურით და მაცდური საკვებით. ეს ადგილი იდეალურია დასვენებისთვის, მედიტაციისთვის და თავგადასავლებისთვის.</p>
+    </main>
+    <aside>
+      <h3>სასარგებლო ბმულები</h3>
+      <ul>
+        <li><a href="#">სანაპიროები</a></li>
+        <li><a href="#">ტურები</a></li>
+        <li><a href="#">ინდური სამზარეულო</a></li>
+      </ul>
+    </aside>
+    <footer>© 2025 გოას გიდი</footer>
+  </div>
+</body>
+</html>
