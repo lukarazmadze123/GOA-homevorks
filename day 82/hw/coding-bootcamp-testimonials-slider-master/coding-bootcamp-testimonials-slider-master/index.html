@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonial Slider</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7fb;
+      margin: 0;
+      padding: 0;
+    }
+
+    .testimonial-container {
+      max-width: 900px;
+      margin: 80px auto;
+      background: white;
+      display: flex;
+      align-items: center;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-text {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .testimonial-text p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .testimonial-text .author {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .testimonial-text .position {
+      color: gray;
+      font-size: 14px;
+    }
+
+    .testimonial-image {
+      flex: 1;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .testimonial-image img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+    }
+
+    .slider-buttons {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+    }
+
+    .slider-buttons button {
+      background: white;
+      border: none;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      font-size: 18px;
+    }
+
+    button:hover {
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+<div class="testimonial-container" id="slider">
+  <div class="testimonial-text" id="text-section">
+    <p>“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”</p>
+    <div class="author">Tanya Sinclair</div>
+    <div class="position">UX Engineer</div>
+  </div>
+  <div class="testimonial-image" id="image-section">
+    <img src="./images/image-tanya.jpg" alt="Tanya Sinclair">
+  </div>
+  <div class="slider-buttons">
+    <button onclick="prevSlide()">‹</button>
+    <button onclick="nextSlide()">›</button>
+  </div>
+</div>
+
+</body>
+</html>

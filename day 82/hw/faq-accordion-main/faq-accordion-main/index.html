@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ Accordion</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f0eefe;
+      color: #1e1e1e;
+    }
+
+    .faq-container {
+      max-width: 600px;
+      margin: 100px auto;
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-container h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      color: #2e0068;
+    }
+
+    .faq-container h1::before {
+      content: "✦";
+      font-size: 24px;
+      margin-right: 10px;
+      color: #a259ff;
+    }
+
+    details {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+    }
+
+    summary {
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    summary::after {
+      content: "+";
+      font-size: 20px;
+      color: #a259ff;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      margin: 10px 0 0;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="faq-container">
+    <h1>FAQs</h1>
+
+    <details open>
+      <summary>What is Frontend Mentor, and how will it help me?</summary>
+      <p>
+        Frontend Mentor offers realistic coding challenges to help developers improve
+        their frontend coding skills with projects in HTML, CSS, and JavaScript. It’s
+        suitable for all levels and ideal for portfolio building.
+      </p>
+    </details>
+
+    <details>
+      <summary>Is Frontend Mentor free?</summary>
+      <p>
+        Yes, most challenges are free to access and complete. Premium challenges and
+        resources are also available.
+      </p>
+    </details>
+
+    <details>
+      <summary>Can I use Frontend Mentor projects in my portfolio?</summary>
+      <p>
+        Absolutely! They're designed to help you build up your skills and portfolio with real-world projects.
+      </p>
+    </details>
+
+    <details>
+      <summary>How can I get help if I'm stuck on a challenge?</summary>
+      <p>
+        The community on the Frontend Mentor Discord server is active and helpful. You can ask questions and share progress there.
+      </p>
+    </details>
+  </div>
+</body>
+</html>

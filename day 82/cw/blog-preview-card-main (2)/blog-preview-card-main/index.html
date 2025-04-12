@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Design</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .karta {
+      width: 330px;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+      border-radius: 20px;
+      box-shadow: 4px 8px hsl(0, 0%, 7%);
+      background-color: hsl(0, 0%, 100%);
+    }
+
+    img {
+      width: 300px;
+      border-radius: 20px;
+    }
+
+    .kartis_kontenti {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    span {
+      background-color: hsl(47, 88%, 63%);
+      color: hsl(0, 0%, 0%);
+      border-radius: 5px;
+      width: 70px;
+      font-weight: bold;
+    }
+
+    p {
+      color: hsl(0, 0%, 42%);
+      font-size: 15px;
+    }
+
+    .geyo {
+      color: hsl(0, 0%, 0%);
+    }
+
+    .satauri {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .shigtavsi {
+      margin-top: 10px;
+      color: hsl(0, 0%, 42%);
+    }
+
+    .profaili_textit {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+    }
+
+    .profaili {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="karta">
+    <img src="./assets/images/illustration-article.svg" alt="Card Image">
+    <div class="kartis_kontenti">
+      <span>Learning</span>
+      <p>published 21 Dec 2023
+      <p>
+      <div class="satauri">HTML & CSS foundations</div>
+      <div class="shigtavsi">These languages are the backbone of web development, defining structure, content, and
+        presentation.</div>
+      <div class="profaili_textit">
+        <img class="profaili" src="./assets/images/image-avatar.webp" alt="profile">
+        <p class="geyo">Greg Hooper</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
