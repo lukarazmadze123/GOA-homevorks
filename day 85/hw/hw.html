@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>ზღვის ცხენები და JS</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: white;
+      margin: 40px;
+      text-align: center;
+    }
+    .seahorse-info {
+      background: linear-gradient(to right, #d0f0ff, #a8e0ff);
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 600px;
+      margin: 30px auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      background-color: #0077cc;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+    #counter {
+      font-size: 24px;
+      margin: 15px;
+    }
+    #text {
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ზღვის ცხენებზე</h1>
+
+  <div class="seahorse-info">
+    <p>ზღვის ცხენები პატარა ზღვის ცხოველები არიან, რომლებიც ბერძნულ მითოლოგიაშიც გვხვდება!</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Hippocampus_kuda_1.jpg/320px-Hippocampus_kuda_1.jpg" alt="ზღვის ცხენი" width="200" />
+  </div>
+
+  <!-- 1. Alert ღილაკი -->
+  <button onclick="showAlert()">მითხარი გამარჯობა</button>
+
+  <!-- 3. ფონის ფერის შეცვლა -->
+  <button onclick="changeBackground()">შეცვალე ფონი</button>
+
+  <!-- 4. Counter -->
+  <p id="counter">0</p>
+  <button onclick="increaseCount()">დამამატე 1</button>
+
+  <!-- 5. ტექსტის ფერის შეცვლა -->
+  <p id="text">ეს ტექსტი შეიცვლის ფერს</p>
+  <button onclick="changeTextColor()">შეცვალე ფერი</button>
+
+  <script>
+    // 1. Alert ტექსტი
+    function showAlert() {
+      alert("გამარჯობა!");
+    }
+
+    // 3. ფონის ფერის შეცვლა
+    let isBlue = false;
+    function changeBackground() {
+      document.body.style.backgroundColor = isBlue ? "white" : "lightblue";
+      isBlue = !isBlue;
+    }
+
+    // 4. Counter
+    let count = 0;
+    function increaseCount() {
+      count += 1;
+      document.getElementById("counter").innerText = count;
+    }
+
+    // 5. ტექსტის ფერის შეცვლა
+    let isGreen = false;
+    function changeTextColor() {
+      const text = document.getElementById("text");
+      text.style.color = isGreen ? "black" : "green"
+      isGreen = !isGreen
+    }
+  </script>
+</body>
+</html>
