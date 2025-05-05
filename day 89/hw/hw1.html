@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <h1>ზღვის გოჭი</h1>
+    <img id="image" src="https://primetime.ge/uploads/files/2022/07/23/20154/zghvis-gochi_w_h.jpeg" alt="Image" class="image">
+    <button onclick="changeImage(1)">აბა ფიქჩერი ფიქჩერი</button>
+    <button onclick="changeImage(2)">აბა ფიქჩერი ფიქჩერი</button>
+    <button onclick="handleBgChange()" type="button">Click Me</button>
+
+<script>
+    function changeImage(buttonNumber) {
+        const image = document.getElementById("image")
+
+        if (buttonNumber === 1) {
+            image.src = "https://tse4.mm.bing.net/th?id=OIP.Vqq7cgBvskIJ0fIe3xGejgHaD2&pid=Api&P=0&h=220"
+        } else if (buttonNumber === 2) {
+            image.src = "https://tse1.mm.bing.net/th?id=OIP.e2_ElnIADRq8QVHSqbJlDAHaFC&pid=Api&P=0&h=220"
+        }
+    }
+
+
+        const body = document.getElementById("body")
+
+        function handleBgChange() {
+            const colors = ["red", "blue", "green", "purple", "orange", "yellow", "pink"];
+            const randomIndex = Math.floor(Math.random() * colors.length);
+            body.style.backgroundColor = colors[randomIndex];
+        }
+
+</script>
+</body>
+</html>
