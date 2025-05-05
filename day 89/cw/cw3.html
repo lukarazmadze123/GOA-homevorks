@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+
+    <img id="image" src="https://blob.sololearn.com/courses/shore1.jpg" alt="Image" class="image">
+    <button onclick="changeImage(1)">აბა ფიქჩერი ფიქჩერი</button>
+    <button onclick="changeImage(2)">აბა ფიქჩერი ფიქჩერი</button>
+    <button onclick="handleBgChange()" type="button">Click Me</button>
+
+<script>
+    function changeImage(buttonNumber) {
+        const image = document.getElementById("image");
+
+        if (buttonNumber === 1) {
+            image.src = "https:blob.sololearn.com/courses/shore.jpg"
+        } else if (buttonNumber === 2) {
+            image.src = "https://tse2.mm.bing.net/th?id=OIP.KygTed33LFpFsvLy6vugQAHaEo&pid=Api&P=0&h=220"
+        }
+    }
+
+
+        const body = document.getElementById("body");
+
+        function handleBgChange() {
+            const colors = ["red", "blue", "green", "purple", "orange", "yellow", "pink"];
+            const randomIndex = Math.floor(Math.random() * colors.length);
+            body.style.backgroundColor = colors[randomIndex];
+        }
+
+</script>
+</body>
+</html>
