@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        .grid{
+            height: 90vh;
+            background-color: white;
+            display: grid;
+    
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+
+
+        }
+
+        .hedfoot{
+            width: 210vh;
+            background-color: blue;
+            height: 300px;
+        }
+
+        .box {
+            background-color: blue;
+            width: 700px;
+        }
+        .first{
+            width: 800px;
+        }
+        .tvice{
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hedfoot"></header>
+    <div class="grid">
+        <div class="box first"></div>
+        <div class="box tvice"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <footer class="hedfoot"></footer>
+</body>
+
+</html>
