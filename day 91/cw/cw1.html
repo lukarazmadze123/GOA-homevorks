@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <button class="btn">incrament</button>
+    <span id="counter">start</span>
+    <script>
+        const body = document.getElementById("body")
+        const button = document.getElementsByClassName("btn")[0]
+        const span = document.getElementById("counter")
+        console.log(span)
+
+
+        button.addEventListener("click", handleIncrement)
+
+        let count = 1000
+
+        function handleIncrement() {
+            console.log("Button clicked")
+            count -= 1
+            span.textContent = count
+        }
+    </script>
+</body>
+
+</html>
